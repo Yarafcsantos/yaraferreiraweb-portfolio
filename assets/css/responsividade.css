@@ -1,0 +1,391 @@
+/* Responsividade para iPad (tablet) */
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0;
+    }
+
+    /************************** SOBRE ***/
+    .sobre {
+        height: auto;
+    }
+
+    .container-sobre {
+        height: auto;
+    }
+    
+    .headline-sobre {
+        height: auto;
+        position: relative;
+    }
+
+    .conteudo-sobre {
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 3rem;
+    }
+
+    .left-sobre {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-sobre {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-sobre {
+        justify-content: center;
+    }
+
+
+    /************************** SERVIÇOS ***/
+
+    .headline-servicos {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .titulo-servicos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .titulo-servicos h1 {
+        font-size: 6rem;
+    }
+
+    .descricao-servicos {
+        width: 100%;
+        text-align: right;
+        font-size: 1.4rem;
+    }
+
+    /************************** PORTFOLIO ***/
+
+    .container-portfolio {
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .headline-portfolio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .headline-portfolio .titulo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .headline-portfolio .titulo {
+        font-size: 6rem;
+    }
+
+    .headline-portfolio .descricao {
+        width: 100%;
+        text-align: right;
+        font-size: 1.4rem;
+    }
+
+    .container-case {
+        gap: 2rem;
+    }
+
+    
+
+    /************************** CONTATO ***/
+    .contato {
+        padding: 0rem 1rem 2rem 1rem;
+        height: auto;
+    }
+
+    .container-contato {
+        width: 100%;
+        height: auto;
+    }
+
+    .headline-contato {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .titulo-contato {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .titulo-contato h1 {
+        font-size: 6rem;
+    }
+
+    .descricao-contato {
+        width: 100%;
+        text-align: right;
+        font-size: 1.4rem;
+    }
+
+    .descricao-contato a {
+        text-decoration: none;
+        color: var(--color-black);
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        line-height: 1.4;
+        font-weight: bold;
+    }
+
+
+    .conteudo-contato {
+        padding-top: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .logo-contato {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-contato img{
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .formulario-contato {
+        width: 100%;
+    }
+
+    .credits-column {
+        width: auto;
+        text-align: right;
+        margin-top: 0;
+    }
+}
+
+/**** TELAS MENORES ****/
+@media (max-width: 900px) {
+    /* Muda a largura das seções para 100% */
+    .left-sobre, .right-sobre {
+        width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Coloca a imagem no topo e os textos embaixo */
+    .conteudo-sobre {
+        flex-direction: column-reverse; /* Alinha os itens verticalmente */
+        height: auto; /* Permite que o conteúdo ocupe apenas o necessário */
+        top: 0;
+    }
+
+    .imagem-sobre {
+        position: relative;
+        margin-bottom: 20px; /* Espaço entre a imagem e os textos */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ajusta os textos para melhor visualização em telas pequenas */
+    .textos-sobre h1 {
+        font-size: 2rem;
+    }
+
+    .textos-sobre p {
+        font-size: 1rem;
+    }
+
+    .redes-sociais a {
+        font-size: 1.2rem;
+    }
+
+    .titulo-servicos {
+        width: 100%; /* Título ocupa toda a largura */
+        text-align: center;
+    }
+
+    .descricao-servicos {
+        width: 100%;
+        text-align: right;
+        font-size: 1.4rem;
+        margin: 10px; /* Ajuste de tamanho de fonte */
+    }
+
+    .card-servicos {
+        width: 90%; /* Diminui o tamanho dos cards */
+        margin: 10px 0; /* Adiciona espaçamento entre os cards */
+    }
+
+    .card-servicos-left {
+        width: 90%; /* Ajuste para telas menores */
+        padding: 1.5rem; /* Reduz o padding */
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr; /* Coloca todos os itens em uma coluna */
+        gap: 1rem; /* Diminui o espaço entre os elementos */
+    }
+
+    .portfolio-container .portfolio-box:first-child {
+        order: 1;
+    }
+
+    .portfolio-box .numb {
+        font-size: 6rem; /* Ajusta o tamanho do número */
+    }
+
+    .portfolio-box h3 {
+        font-size: 2.5rem; /* Ajusta o tamanho do título */
+    }
+
+    .portfolio-box p {
+        font-size: 1.4rem; /* Ajusta o tamanho da descrição */
+    }
+
+    .portfolio-box .tech {
+        font-size: 1.4rem; /* Ajusta o tamanho do texto de tecnologia */
+    }
+
+    .portfolio-box .live-github a {
+        padding: 10px; /* Ajusta o tamanho do botão */
+        font-size: 18px; /* Ajusta o tamanho do ícone */
+    }
+
+    .portfolio-box .portfolio-carousel {
+        height: 35rem; /* Diminui a altura do carrossel */
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Para garantir que os itens fiquem centralizados */
+    }
+
+    .logo-column {
+        align-items: center; /* Centraliza a logo no mobile */
+        margin-bottom: 1rem; /* Espaço abaixo da logo */
+    }
+
+    .menu-column,
+    .social-column {
+        margin-bottom: 1rem; /* Espaço entre as colunas de links e redes sociais */
+    }
+
+    .footer-nav,
+    .social-links {
+        align-items: center; /* Centraliza os links */
+    }
+    
+}
+
+/* Responsividade para telas menores que 600px (mobile) */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textos-sobre h1 {
+        font-size: 1.6rem;
+    }
+
+    .textos-sobre p {
+        font-size: 0.9rem;
+    }
+
+    .titulo-servicos h1 {
+        font-size: 2.5rem; /* Reduz o tamanho do título */
+    }
+
+    .descricao-servicos {
+        font-size: 1.4rem; /* Reduz o tamanho da descrição */
+    }
+
+    .servicos-cards {
+        padding: 0 10px; /* Ajusta o padding */
+    }
+
+    .card-servicos-left {
+        flex-direction: column; /* Alinha os itens do card em coluna */
+        gap: 1rem; /* Ajusta o espaçamento entre os elementos */
+        padding: 1.5rem; /* Ajusta o padding */
+        border-radius: 36px;
+    }
+
+    .card-icon {
+        width: 100%; /* Icone ocupa toda a largura disponível */
+        justify-content: center;
+    }
+
+    .card-titulo {
+        font-size: 18px; /* Ajusta o tamanho do título do card */
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr; /* Coloca os elementos em uma única coluna */
+        gap: 1.5rem; /* Diminui ainda mais o gap entre os itens */
+    }
+
+    .portfolio-box .numb {
+        font-size: 5rem; /* Ajuste para números menores */
+    }
+
+    .portfolio-box h3 {
+        font-size: 2rem; /* Ajuste para o título */
+    }
+
+    .portfolio-box p {
+        font-size: 1.2rem; /* Ajuste para o texto de descrição */
+    }
+
+    .portfolio-box .tech {
+        font-size: 1.2rem; /* Ajuste do texto de tecnologias */
+    }
+
+    .portfolio-container .portfolio-box:first-child {
+        order: 1;
+    }
+
+    .portfolio-box .live-github a {
+        padding: 8px; /* Ajuste do tamanho do botão */
+        font-size: 16px; /* Reduz o tamanho do ícone */
+    }
+
+    .portfolio-box .portfolio-carousel {
+        height: 30rem; /* Ajuste a altura do carrossel */
+    }
+
+    #backToTop {
+        bottom: 15px;
+        left: 10px; /* Ajuste para telas menores */
+    }
+
+    #whatsappButton {
+        bottom: 15px;
+        right: 20px; /* Ajuste para telas menores */
+        width: 50px; /* Tamanho reduzido para telas pequenas */
+        height: 50px; /* Tamanho reduzido para telas pequenas */
+    }
+    
+}
+
